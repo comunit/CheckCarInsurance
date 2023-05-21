@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <meta name="description" content="Contact Us | Check Car Insurance">
+    <style>
+        .inputcontainer {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        .nameemail {
+            display: flex;
+            
+        }
+
+        .inputitem {
+            padding: 10px;
+        }
+        .submitbutton {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        .inputitem input  {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        textarea {
+            max-width: 500px;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+    </style>
+    <title>
+        Contact Us | Check Car Insurance
+    </title>
+
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <div class="logo">
+                <a href="./"><img src="./img/logo.png" alt="Check Car Insurance Logo"></a>
+            </div>
+            <div class="header-right">
+                <a href="/help.html">Help</a>
+            </div>
+        </header>  
+
+        <main>
+            <div class="inputcontainer">
+                <h1>Contact Us</h1>
+                <p>Have a question? We're here to help.</p>
+                <form action="/contact-us" method="POST">
+                    <div class="nameemail">
+                        <div class="inputitem">
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="inputitem">
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <div class="inputitem">
+                        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <div class="inputitem">
+                        <input class="submitbutton" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footercontainer mt70">
+                <div class="footeritem">
+                    <h6>Service</h6>
+                    <ul>
+                        <li><a href="./" target="_blank" rel="noopener noreferrer">Check Insurance</a></li>
+                        <li><a href="https://www.gov.uk/vehicle-tax" target="_blank" rel="noopener noreferrer">Tax Your Vehicle</a></li>
+                        <li><a href="https://www.gov.uk/check-mot-history" target="_blank" rel="noopener noreferrer">MOT History</a></li>
+                        <li><a href="https://www.gov.uk/get-vehicle-information-from-dvla" target="_blank" rel="noopener noreferrer">Vehicle Enquiry</a></li>
+                    </ul>
+                </div>
+                <div class="footeritem">
+                    <h6>Help & Support</h6>
+                    <ul>
+                        <li><a href="/faqs.html">FAQs</a></li>
+                        <li><a href="/contact-us.html">Contact Us</a></li>
+                        <li><a href="/report.html">Report a Problem</a></li>
+                        <li><a href="/customer-service.html">Customer Service</a></li>
+                    </ul>
+                </div>
+                <div class="footeritem">
+                    <h6>Legal</h6>
+                    <ul>
+                        <li><a href="/terms-and-conditions.html">Terms and Conditions</a></li>
+                        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="/cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="/data-protection.html">Data Protection</a></li>
+                    </ul>
+                </div>
+                <div class="footeritem footerlast">
+                    <img src="./img/logo.png" alt="">
+                    <p>© Check Car Insurance</p>
+                    <p>Your go-to source for vehicle information.</p>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+    
+</body>
+</html>
